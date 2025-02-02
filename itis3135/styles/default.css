@@ -1,0 +1,29 @@
+body{
+    background-color:lightblue;
+    text-align: center;
+    color:rgb(98, 154, 190);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    color:rgb(62, 107, 148);
+    text-decoration:none;
+}
+a:hover{
+    color:lightpink;
+    text-decoration:underline
+}
+main{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+h2{
+    text-align:center;
+}
+img{
+    width:100%;
+}
+figure{
+    text-align: center;
+    font-style:oblique;
+}
