@@ -10,7 +10,7 @@ a{
 }
 a:hover{
     color:lightpink;
-    text-decoration:underline
+    text-decoration:underline;
 }
 main{
     text-align: center;
