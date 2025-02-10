@@ -1,29 +1,44 @@
-body{
-    background-color:rgb(195, 173, 230);
+/* Background color and text formatting */
+body {
+    background-color: rgb(195, 173, 230);
     text-align: center;
-    color:rgb(166, 122, 196);
-    font-family:Georgia, 'Times New Roman', Times, serif
+    color: rgb(166, 122, 196);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-a{
-    color:rgb(78, 155, 101);
-    text-decoration:none;
+
+/* Links */
+a {
+    color: rgb(78, 155, 101);
+    text-decoration: none;
 }
-a:hover{
-    color:rgb(85, 31, 110);
-    text-decoration:underline;
+a:hover {
+    color: rgb(85, 31, 110);
+    text-decoration: underline;
 }
-main{
+
+/* Center main content */
+main {
     text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: auto;
+    width: 60%;
 }
-h2{
-    text-align:center;
-}
-img{
-    width:100%;
-}
-figure{
+
+/* Headings */
+h2 {
     text-align: center;
-    font-style:oblique;
+}
+
+/* Images */
+img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Figure styling */
+figure {
+    text-align: center;
+    font-style: oblique;
 }
