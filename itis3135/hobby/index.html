@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #FFD1DC; /* Pastel Pink */
+            color: #FF007F; /* Reddish Hot Pink */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style-position: inside; /* Ensures the bullets are inside the container */
+            text-align: center;          /* Centers the text and bullets */
+            padding-left: 0;             /* Remove the default padding */
+            margin: 0;                   /* Remove default margin */
+        }
+
+        nav ul li {
+            display: inline-block; /* Ensures list items are displayed in a line */
+            margin: 10px;          /* Adds spacing between the items */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FF007F;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer; /* Ensures it looks clickable */
+        }
+
+        /* Sections */
+        .content-section {
+            display: none;
+            padding: 20px;
+            border: 2px solid #FF007F;
+            border-radius: 10px;
+            margin: 20px;
+            background: #FFE4E1;
+        }
+
+        /* Show section when it has the "visible" class */
+        .visible {
+            display: block;
+        }
+
+        /* Images */
+        figure img {
+            width: 100%;
+            max-width: 400px;
+            border: 2px solid #FF007F;
+            border-radius: 10px;
+            box-sizing: border-box; /* Ensures the border and padding are included in the width */
+        }
+
+        /* Validation Buttons */
+        .validation-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: #FF007F;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .validation-buttons a:hover {
+            background: #D4006E;
+        }
+        
+        /* Locations Page Images */
+        #locations img {
+            max-width: 300px; /* Control the maximum size of the images */
+        }
+
+        /* How Page Images */
+        #how img,#why img {
+            max-width: 400px; /* Control the maximum size of the images */
+        }
+
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>My Hobby</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showSection('home')" aria-label="Navigate to Home">Home</a></li>
+                <li>|</li>
+                <li><a href="javascript:void(0);" onclick="showSection('about')">About</a></li>
+                <li>|</li>
+                <li><a href="javascript:void(0);" onclick="showSection('schedule')">Best Times</a></li>
+                <li>|</li>
+                <li><a href="javascript:void(0);" onclick="showSection('locations')">Best Locations</a></li>
+                <li>|</li>
+                <li><a href="javascript:void(0);" onclick="showSection('how')">How</a></li>
+                <li>|</li>
+                <li><a href="javascript:void(0);" onclick="showSection('why')">Why</a></li>
+                <li>|</li>
+                <li><a href="javascript:void(0);" onclick="showSection('ai-prompts')">AI Prompts</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="content-section visible">
+            <h2>Home</h2>
+            <p>Welcome to my hobby of Wellness Bodybuilding, where fitness meets a balanced lifestyle.</p>
+            <figure>
+                <img src="images/IMG_9546.JPG" alt="A person lifting weights with a smile">
+                <figcaption>Me flexing in the mirror in UREC at UNC Charlotte, NC.</figcaption>
+            </figure>
+            <p>A hobby that I have pursued throughout my life is bodybuilding. Growing up, I played several sports, and during my senior year of high school, I lifted weights casually, mostly for athletic training. However, this hobby extended beyond school, and I began working out at my local YMCA until I graduated. I started taking bodybuilding more seriously during my first year at UNC Charlotte. Although I have yet to compete, I see a future in wellness bodybuilding. For now, I continue to train recreationally.</p>
+        </section>
+        
+        <section id="about" class="content-section">
+            <h2>About</h2>
+            <p>
+                The <strong>Wellness Bodybuilding Women’s Division</strong> is a category in competitive bodybuilding designed for women who have a more athletic and curvier lower-body development compared to other divisions like Bikini or Figure.
+            </p>
+            <figure>
+                <img src="images/Wellness-Prejudging-Thumb-1024x543.jpg" 
+                     alt="Wellness Bodybuilding Competitors">
+                <figcaption><em>Well-known Wellness bodybuilders at the Arnold 2025!</em></figcaption>
+            </figure>
+            <br>
+        
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nyrmahk/video/7476275153849158954" 
+                        data-video-id="7476275153849158954" style="max-width: 325px; min-width: 325px;">
+                <a href="https://www.tiktok.com/@nyrmahk/video/7476275153849158954" target="_blank">Watch this TikTok</a>
+            </blockquote> 
+            <script async src="https://www.tiktok.com/embed.js"></script>
+        
+            <p>
+                This division piques my interest because it is not often that taller women take the stage, and I would love the opportunity to change that. One day, I aspire to step into the spotlight and represent taller women with confidence, grace, and strength. It would be an honor to break stereotypes, inspire others, and showcase that beauty and talent come in all heights.
+            </p>
+        </section>
+        
+        
+        <section id="schedule" class="content-section">
+            <h2>Best Times</h2>
+            <figure>
+                <img src="images/IMG_7580.jpg" 
+                     alt="UREC UNCC Morning time">
+                <figcaption><em>UNCC University Recreation Center during the morning </em></figcaption>
+            </figure>
+            <p>Optimal workout times depend on personal schedules, but mornings can boost energy for the day.</p>
+            <ul>
+                <li><strong>Early Morning (5:00 AM - 7:30 AM)</strong>
+                    <ul>
+                        <li><strong>Best for:</strong> Those who want a fresh start to their day.</li>
+                        <li><strong>Pros:</strong> Fewer people, access to all equipment, boosts energy for the day.</li>
+                        <li><strong>Cons:</strong> Requires waking up early, may take time to adjust.</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Late Morning (9:00 AM - 11:00 AM)</strong>
+                    <ul>
+                        <li><strong>Best for:</strong> People with flexible schedules or work-from-home individuals.</li>
+                        <li><strong>Pros:</strong> Avoids the early morning rush, more space, body is fully awake.</li>
+                        <li><strong>Cons:</strong> Some gyms start getting busier around 10:30 AM.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+  <section id="locations" class="content-section">
+            <h2>Best Locations</h2>
+            <p>Whether at the gym or outdoors, finding a motivating environment is crucial for progress.</p>
+            <p> Here are a few of my favorites: </p>
+            <ul>
+                <li>
+                    <strong>Location 1</strong><br>
+                    <img src="images/IMG_8322.jpg" alt="Megaflex gym university" width="300">
+                    <ul>
+                        <li><strong>Best for:</strong> Old school bodybuilding aesthetics, iron weights, open 24/7, has more than one facility </li>
+                        <li><strong>Locations:</strong> University location, Northlake location</li>
+                    </ul>
+                </li>
+        
+                <li>
+                    <strong>Location 2</strong><br>
+                    <img src="images/IMG_9148.jpg" alt="University Recreation Center" width="300">
+                    <ul>
+                        <li><strong>Best for:</strong> Easy on-campus access for students, has a variety of fitness classes, swimming pool and outdoor courts.</li>
+                        <li><strong>Facilities:</strong> University recreation (UNC Charlotte's campus) </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="how" class="content-section">
+            <h2>How</h2>
+            <p>Proper technique, consistency, and recovery are key to effective bodybuilding.</p>
+            <figure> <img src="images/IMG_9948.jpg" alt="Hacksquat form">
+                <figcaption>Hacksquat form</figcaption>
+            </figure>
+            <p>How to get started into bodybuilding: </p>
+            <ul>
+                <li>Find a passion and love for the sport</li>
+                <li>Find a gym that makes you comfortable and happy</li>
+                <li>Stay consistent and create healthy habits</li>
+                <li>Food is fuel!</li>
+                <li>Rest and recovery is essential for bodybuilding</li>
+                <li>Competing is not for everyone, although if you are interested, look for local shows and coaches that will help mentally and physically.</li>
+            </ul>
+        </section>
+
+        <section id="why" class="content-section">
+            <h2>Why</h2>
+            <p>Wellness bodybuilding promotes long-term health, strength, and confidence.</p>
+            <figure><img src="images/IMG_7584.jpg" alt="Cable machine inside of UREC">
+                <figcaption> Cable machine inside of the UNC Charlotte UREC gym. </figcaption></figure>
+            <p>Bodybuilding is my hobby because it provides a creative outlet for shaping my physique. Going to the gym energizes me and helps clear my mind, especially after long days. Seeing the physiques of other competitors during competitions not only inspires me but also pushes me to pursue greatness both in and outside of the gym. Bodybuilding is about growth and patience; it's a challenging journey that attracts people from all walks of life.</p>
+        </section>
+        <section id="ai-prompts" class="content-section">
+            <h2>Ai prompts</h2>
+            <p>Create A well defined-definition of wellness bodybuilding division: </p>
+            <p>How to insert a tiktok video in html, css, and javascript?</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed by Khamryn Turner, Certified in Responsive Web Design<em><a href="https://www.freecodecamp.org/certification/KhamrynRTurner/responsive-web-design"> Certification</a></em>, <a href="turnerdesigns.co"> Turner Designs </a>&copy; 2025</p>     </footer>
+
+  <script>
+    function showSection(sectionId) {
+        // Get all sections
+        const sections = document.querySelectorAll('.content-section');
+        
+        // Hide all sections by removing the 'visible' class
+        sections.forEach((section) => {  // Wrap the parameter in parentheses
+            section.classList.remove('visible');
+        });
+
+        // Show the selected section if it exists
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+            targetSection.classList.add('visible');
+        } else {
+            console.error('Section not found:', sectionId);
+        }
+    }
+</script>
+
+</body>
+</html>
