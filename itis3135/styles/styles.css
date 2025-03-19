@@ -32,9 +32,8 @@ main {
 }
 
 img {
-    width: 40%;
+    max-width: 100%; /* Ensures image scales correctly */
     height: auto; /* Maintains aspect ratio */
-   
 }
 
 figure {
@@ -55,7 +54,7 @@ figure {
 @media (max-width: 768px) {
     main {
         width: 100%;
-    } /* Missing closing brace was added */
+    }
 
     body {
         font-size: 16px; /* Improves readability */
