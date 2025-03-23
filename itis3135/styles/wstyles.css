@@ -42,27 +42,84 @@ figure {
     text-align: center;
     font-style: oblique;
 }
+
 /* Foundational Three */
 main, .maincontainer {
     width: 95%;
     margin: 0 auto;
     max-width: 1200px;
 }
+
+/* Table Accessibility Improvements */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Table Headers */
+th {
+    background-color: darkmagenta; /* Dark Blue */
+    color: white;
+    padding: 12px;
+    border: 1px solid violet;
+    text-align: left;
+}
+
+/* Table Cells */
+td {
+    padding: 10px;
+    border: 1px solid rgb(167, 133, 167);
+}
+
+/* High Contrast Alternating Rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light Gray */
+}
+
+tr:nth-child(odd) {
+    background-color: #dfefff; /* Very Light Blue */
+}
+
+/* Hover Effect for Better Visibility */
+tr:hover {
+    background-color: #460e6b;
+}
+
+/* Caption Styling */
+caption {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Footers & Totals Highlight */
+tfoot tr {
+    background-color: #002244; /* Darker Blue */
+    color: white;
+    font-weight: bold;
+}
+
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     #colorbox {
-        background-color:lightblue;
+        background-color: lightblue;
     }
 }
+
 /* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
     #colorbox {
-        background-color:lightblue;
+        background-color: lightblue;
     }
 }
+
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     #colorbox {
-        background-color:lightblue;
+        background-color: lightblue;
     }
 }
