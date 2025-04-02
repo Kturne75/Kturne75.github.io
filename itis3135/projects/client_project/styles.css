@@ -1,0 +1,156 @@
+/* General Reset */
+body, header, footer, nav, button, section, a, li {
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8daddbc4;
+    text-align: center;
+}
+
+/* Header & Footer */
+header, footer {
+    background-color: #0e1c36fb;
+    color: rgba(182, 195, 231, 0.8);
+    padding: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #E1F0C4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a {
+    color: #0E1C36;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #AFCBFF;
+    border-radius: 5px;
+}
+
+/* Main Content Sections */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Quiz Styling */
+#quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+button {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #8da59e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4e6a8d;
+}
+
+/* Correct & Incorrect Answer Styling */
+.correct {
+    background-color: #55917F;
+}
+
+.incorrect {
+    background-color: rgb(45, 42, 59);
+}
+
+.correct-answer {
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+
+figure {
+    text-align: center;
+    font-style: oblique;
+}
+/* Resize the logo image to fit within the 35% tolerance */
+#logo {
+    object-fit: contain; /* Maintain aspect ratio */
+    border: 3px solid #0E1C36; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    display: block;
+    margin: 10px auto; /* Center the logo */
+}
+
+
+
+
+figure img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 2px solid #4e6a8d;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+}
+#basketball_info img{
+    width: 396px; /* Match the displayed size */
+    height: auto; /* Keep proportions */
+    object-fit: cover; /* Ensure images fill the area properly */
+}
+
+
+/* Laptops & Smaller Screens */
+@media (max-width: 1024px) {
+    main {
+        width: 95%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+
+    body {
+        font-size: 16px; /* Improves readability */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+    
+}

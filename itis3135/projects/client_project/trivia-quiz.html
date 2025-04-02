@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Trivia Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <img src="../images/mlogo_50x50.jpg" alt="Hoops and Dreams Logo" width="50" height="50">
+    <h1>Basketball Trivia Quiz</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="basketball_info.html">Basketball Info</a>
+    <a href="client_profile.html">Client Profile</a>
+    <a href="ways_to_get_involved.html">Ways To Get Involved</a>
+    <a href="trivia-quiz.html">Basketball Trivia</a>
+</nav>
+
+    <h2>Test Your Knowledge!</h2>
+    <figure>
+        <img src="../images/Lakers.jpg" alt="NBA Lakers Team">
+        <figcaption>NBA Lakers vs Grizzlies</figcaption>
+    </figure>
+
+    <div id="quiz-container">
+        <form id="trivia-form">
+            <div class="question">
+                <p>1. Which NBA player has the most championship rings?</p>
+                <label><input type="radio" name="q1" value="a"> Michael Jordan</label>
+                <label><input type="radio" name="q1" value="b"> Bill Russell</label>
+                <label><input type="radio" name="q1" value="c"> LeBron James</label>
+                <label><input type="radio" name="q1" value="d"> Kobe Bryant</label>
+            </div>
+
+            <div class="question">
+                <p>2. What year was the NBA founded?</p>
+                <label><input type="radio" name="q2" value="a"> 1946</label>
+                <label><input type="radio" name="q2" value="b"> 1950</label>
+                <label><input type="radio" name="q2" value="c"> 1932</label>
+                <label><input type="radio" name="q2" value="d"> 1961</label>
+            </div>
+
+            <div class="question">
+                <p>3. Who is the all-time leading scorer in the NBA?</p>
+                <label><input type="radio" name="q3" value="a"> Michael Jordan</label>
+                <label><input type="radio" name="q3" value="b"> Kareem Abdul-Jabbar</label>
+                <label><input type="radio" name="q3" value="c"> LeBron James</label>
+                <label><input type="radio" name="q3" value="d"> Karl Malone</label>
+            </div>
+
+            <div class="question">
+                <p>4. Which team won the most NBA championships?</p>
+                <label><input type="radio" name="q4" value="a"> Los Angeles Lakers</label>
+                <label><input type="radio" name="q4" value="b"> Boston Celtics</label>
+                <label><input type="radio" name="q4" value="c"> Chicago Bulls</label>
+                <label><input type="radio" name="q4" value="d"> Golden State Warriors</label>
+            </div>
+
+            <div class="question">
+                <p>5. Who was the first NBA player to score 100 points in a single game?</p>
+                <label><input type="radio" name="q5" value="a"> Michael Jordan</label>
+                <label><input type="radio" name="q5" value="b"> Kobe Bryant</label>
+                <label><input type="radio" name="q5" value="c"> Wilt Chamberlain</label>
+                <label><input type="radio" name="q5" value="d"> Shaquille O'Neal</label>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+
+        <p id="result"></p>
+    </div>
+
+<footer>
+    <p>Designed by Khamryn Turner | <a href="https://www.freecodecamp.org/certification/KhamrynRTurner/responsive-web-design">Certification</a> | <a href="turnerdesigns.co"> Turner Designs </a> &copy; 2025</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="/itis3135/scripts/trivia-script.js"></script>
+</body>
+</html>
