@@ -2,6 +2,7 @@
 body, header, footer, nav, button, section, a, li {
     box-sizing: border-box;
 }
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
@@ -96,21 +97,19 @@ button:hover {
     color: rgb(0, 0, 0);
 }
 
+/* Figure & Logo */
 figure {
     text-align: center;
     font-style: oblique;
 }
-/* Resize the logo image to fit within the 35% tolerance */
+
 #logo {
-    object-fit: contain; /* Maintain aspect ratio */
-    border: 3px solid #0E1C36; /* Border color */
-    border-radius: 10px; /* Rounded corners */
+    object-fit: contain;
+    border: 3px solid #0E1C36;
+    border-radius: 10px;
     display: block;
-    margin: 10px auto; /* Center the logo */
+    margin: 10px auto;
 }
-
-
-
 
 figure img {
     width: 100%;
@@ -122,12 +121,12 @@ figure img {
     display: block;
     margin: 0 auto;
 }
-#basketball_info img{
-    width: 396px; /* Match the displayed size */
-    height: auto; /* Keep proportions */
-    object-fit: cover; /* Ensure images fill the area properly */
-}
 
+#basketball_info img {
+    width: 396px;
+    height: auto;
+    object-fit: cover;
+}
 
 /* Laptops & Smaller Screens */
 @media (max-width: 1024px) {
@@ -143,7 +142,7 @@ figure img {
     }
 
     body {
-        font-size: 16px; /* Improves readability */
+        font-size: 16px;
     }
 }
 
@@ -152,5 +151,80 @@ figure img {
     main {
         width: 100%;
     }
-    
+} /* ✅ This was the missing closing brace! */
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: modalFadeIn 0.5s ease-out;
+}
+
+@keyframes modalFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.modal-content:hover {
+    transform: scale(1.1);
+}
+
+#modalCaption {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.modal-prev,
+.modal-next {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 9999;
+}
+
+.modal-prev {
+    left: 0;
+    margin-top: -50px;
+}
+
+.modal-next {
+    right: 0;
+    margin-top: -50px;
 }

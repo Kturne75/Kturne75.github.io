@@ -6,7 +6,6 @@
     <title>Client Profile</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
 
@@ -23,27 +22,32 @@
     <a href="trivia-quiz.html">Basketball Trivia</a>
 </nav>
 
-    <h2>Meet Matthew</h2>
-    <p>Meet Matthew, a passionate basketball enthusiast and aspiring coach. Matthew is dedicated to pursuing a career in basketball coaching and has a wealth of experience playing and studying the game.</p>
-        <figure>
-            <img src="../images/resized_IMG_2905.JPEG" alt="Matthews headshot">
-            <figcaption>Meet Matthew! </figcaption>
-        </figure>
-        <figure>
-            <img src="../images/resized_IMG_6677.JPEG" alt="Matthews close up of touching the rim ">
-            <figcaption>Matthews close up of touching the rim </figcaption>
-        </figure>
-        <figure>
-            <img src="../images/IMG_6681.JPEG" alt="Matthew playing basketball">
-            <figcaption>Matthew playing basketball </figcaption>
-        </figure>
-        <p><strong>Matthew's Aspirations:</strong> Matthew is eager to work with youth basketball programs and major and help players improve their skills.</p>
-        <p><strong>Matthew's experience:</strong>Matthew grew up playing basketball, which led him to participate in intramural basketball teams at UNCC. He also plays in his fraternity league, Alpha Tau Omega (ATO). Additionally, he gained valuable experience working with both the UNCC men's and women's basketball teams. </p>
-    
+<h2>Meet Matthew</h2>
+<p>Meet Matthew, a passionate basketball enthusiast and aspiring coach. Matthew is dedicated to pursuing a career in basketball coaching and has a wealth of experience playing and studying the game.</p>
+
+
+<div class="gallery">
+   <img id="currentImage" src="../images/resized_IMG_2905.JPEG" alt="Matthews headshot">
+    <button id="next" class="gallery-btn">Next</button>
+    <button id="prev" class="gallery-btn">Previous</button>
+</div>
+
+<p><strong>Matthew's Aspirations:</strong> Matthew is eager to work with youth basketball programs and help players improve their skills.</p>
+<p><strong>Matthew's Experience:</strong> Matthew grew up playing basketball, which led him to participate in intramural basketball teams at UNCC. He also plays in his fraternity league, Alpha Tau Omega (ATO). Additionally, he gained valuable experience working with both the UNCC men's and women's basketball teams.</p>
+
+
+<div id="imageModal" class="modal">
+    <span class="close" id="closeModal">&times;</span>
+    <span class="modal-prev" id="prevBtn">&#10094;</span>
+    <img class="modal-content" id="modalImage" src="#" alt="Enlarged image preview">
+    <div id="modalCaption"></div>
+    <span class="modal-next" id="nextBtn">&#10095;</span>
+</div>
 
 <footer>
-    <p>Designed by Khamryn Turner | <a href="https://www.freecodecamp.org/certification/KhamrynRTurner/responsive-web-design">Certification</a> | <a href="turnerdesigns.co"> Turner Designs </a> &copy; 2025</p>
+    <p>Designed by Khamryn Turner | <a href="https://www.freecodecamp.org/certification/KhamrynRTurner/responsive-web-design">Certification</a> | <a href="turnerdesigns.co">Turner Designs</a> &copy; 2025</p>
 </footer>
+<script src="/itis3135/scripts/gallery_client.js"></script> 
 
 </body>
 </html>
