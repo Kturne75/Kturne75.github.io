@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khamryn Slideshow - ITIS 3135</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+ html, body, div, section, article, header, main, footer, nav, p, img,
+h1, h2, h3, h4, h5, h6, ul, ol, li, a, span {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.column {
+  flex: 0 0 auto;
+  width: calc(100% / 13 - 10px);
+  max-width: 100px;
+}
+
+.demo {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+
+  }
+  </style>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<header>
+  <div data-include="components/header.html"></div>
+</header>
+
+<main>
+  <h2>Khamryn Image Slideshow</h2>
+  <p class="tagline">Explore each letter of my name through images!</p>
+
+  <div class="container">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 13</div>
+      <img src="images/kite.jpg" style="width:100%" alt="colorful kite in the sky">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 13</div>
+      <img src="images/hat(1).jpg" style="width:100%" alt="A sparkly cowgirl hat">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 13</div>
+      <img src="images/appleorchard.jpg" style="width:100%" alt="An apple orchard">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 13</div>
+      <img src="images/mount(1).jpg" style="width:100%" alt="the beautiful mountian">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 13</div>
+      <img src="images/redbull(1).jpg" style="width:100%" alt="redbull section in QuikTrip">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 13</div>
+      <img src="images/blueyarn.jpg" style="width:100%" alt="a ball of light blue yarn">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 13</div>
+      <img src="images/NORM(1).jpg" style="width:100%" alt="norm the niner at a basketball game"> 
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">8 / 13</div>
+        <img src="images/train(1).jpg" style="width:100%" alt="Train station for a trip to Greensboro"> 
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">9/ 13</div>
+        <img src="images/underwater(1).jpg" style="width:100%" alt="a picture under water"> 
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">10 / 13</div>
+        <img src="images/rain(1).jpg" style="width:100%" alt="rainy day at UNCC"> 
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">11 / 13</div>
+        <img src="images/nighttime(1).jpg" style="width:100%" alt="nighttime at charlotte"> 
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">12 / 13</div>
+        <img src="images/egg.jpg" style="width:100%" alt="a lovely egg!"> 
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">13 / 13</div>
+        <img src="images/slush(1).jpg" style="width:100%" alt="red and yellow QuikTrip slush"> 
+      </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption">K - for Kite (1st letter)</p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images/kite.jpg" onclick="currentSlide(1)" alt="K - for Kite (1st letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/hat(1).jpg" onclick="currentSlide(2)" alt="H - for Hat (2nd letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/appleorchard.jpg" onclick="currentSlide(3)" alt="A - for Apple (3rd letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/mount(1).jpg" onclick="currentSlide(4)" alt="M - for Mountain (4th letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/redbull(1).jpg" onclick="currentSlide(5)" alt="R - for Redbull section in QuikTrip (5th letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/blueyarn.jpg" onclick="currentSlide(6)" alt="Y - for Yarn (6th letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/NORM(1).jpg" onclick="currentSlide(7)" alt="N - for Norm (7th letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/train(1).jpg" onclick="currentSlide(8)" alt="T - Train (8th letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/underwater(1).jpg" onclick="currentSlide(9)" alt="U - underwater (9th letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/rain(1).jpg" onclick="currentSlide(10)" alt="R - rain (10th letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/nighttime(1).jpg" onclick="currentSlide(11)" alt="N - nighttime (11th letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/egg.jpg" onclick="currentSlide(12)" alt="E - egg (12th letter)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/slush(1).jpg" onclick="currentSlide(13)" alt="R - red quiktrip slush (13th letter)">
+      </div>
+    </div>
+  </div>
+
+  <h3>Ai-prompts</h3>
+  <ul>
+    <li>"Create a  colorful kite image"</li>
+    <li>"Create a  sparkly cowgirl hat image"</li>
+    <li>"Create a mountain image"</li>
+    <li>"Create a light blue ball of yarn image"</li>
+    <li>"Convert image to jpg"</li>
+    <li>"Change the size of this image"</li>
+    <li>"Create an image of an egg"</li>
+
+  </ul>
+</main>
+
+<footer>
+  <div data-include="components/footer.html"></div>
+</footer>
+
+<script src="scripts/gallery-project.js" defer></script>
+<script src="scripts/HTMLInclude.min.js"></script>
+
+</body>
+</html>
