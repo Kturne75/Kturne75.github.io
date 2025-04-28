@@ -4,7 +4,77 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">   
         <title>Khamryn Turner's Charlotte Homepage - Welcome!</title>
-        <link rel="stylesheet" href="itis3135/styles/styles.css">
+        <style>body {
+            background-color: lightblue;
+            text-align: center;
+            color: rgb(98, 154, 190);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Apply box-sizing only to necessary elements */
+        body, main, img, figure, h2, a {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            color: rgb(62, 107, 148);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: lightpink;
+            text-decoration: underline;
+        }
+        
+        main {
+            max-width: 1200px; /* Ensures content does not stretch too wide */
+            width: 90%; /* Makes it flexible based on screen size */
+            margin: 0 auto; /* Centers the content */
+            text-align: center;
+        }
+        
+        img {
+            max-width: 100%; /* Ensures image scales correctly */
+            height: auto; /* Maintains aspect ratio */
+        }
+        
+        figure {
+            text-align: center;
+            font-style: oblique;
+        }
+        
+        /* Responsive Design */
+        
+        /* Laptops & Smaller Screens */
+        @media (max-width: 1024px) {
+            main {
+                width: 95%;
+            }
+        }
+        
+        /* Tablets */
+        @media (max-width: 768px) {
+            main {
+                width: 100%;
+            }
+        
+            body {
+                font-size: 16px; /* Improves readability */
+            }
+        }
+        
+        /* Mobile Devices */
+        @media (max-width: 480px) {
+            main {
+                width: 100%;
+            }
+            
+        }
+        </style>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
     <body>
