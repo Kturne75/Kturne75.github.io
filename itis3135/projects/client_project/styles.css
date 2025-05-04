@@ -151,7 +151,7 @@ figure img {
     main {
         width: 100%;
     }
-} /* ✅ This was the missing closing brace! */
+}
 
 /* Modal styling */
 .modal {
@@ -228,3 +228,4 @@ figure img {
     right: 0;
     margin-top: -50px;
 }
+

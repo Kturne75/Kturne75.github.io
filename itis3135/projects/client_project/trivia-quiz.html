@@ -12,7 +12,7 @@
 <header>
     <div data-include="components/header.html"></div>
 </header>
-
+<main>
 <h1>Basketball Trivia Quiz</h1>
 
     <h2>Test Your Knowledge!</h2>
@@ -23,51 +23,52 @@
 
     <div id="quiz-container">
         <form id="trivia-form">
-            <div class="question">
-                <p>1. Which NBA player has the most championship rings?</p>
-                <label><input type="radio" name="q1" value="a"> Michael Jordan</label>
-                <label><input type="radio" name="q1" value="b"> Bill Russell</label>
-                <label><input type="radio" name="q1" value="c"> LeBron James</label>
-                <label><input type="radio" name="q1" value="d"> Kobe Bryant</label>
-            </div>
-
-            <div class="question">
-                <p>2. What year was the NBA founded?</p>
-                <label><input type="radio" name="q2" value="a"> 1946</label>
-                <label><input type="radio" name="q2" value="b"> 1950</label>
-                <label><input type="radio" name="q2" value="c"> 1932</label>
-                <label><input type="radio" name="q2" value="d"> 1961</label>
-            </div>
-
-            <div class="question">
-                <p>3. Who is the all-time leading scorer in the NBA?</p>
-                <label><input type="radio" name="q3" value="a"> Michael Jordan</label>
-                <label><input type="radio" name="q3" value="b"> Kareem Abdul-Jabbar</label>
-                <label><input type="radio" name="q3" value="c"> LeBron James</label>
-                <label><input type="radio" name="q3" value="d"> Karl Malone</label>
-            </div>
-
-            <div class="question">
-                <p>4. Which team won the most NBA championships?</p>
-                <label><input type="radio" name="q4" value="a"> Los Angeles Lakers</label>
-                <label><input type="radio" name="q4" value="b"> Boston Celtics</label>
-                <label><input type="radio" name="q4" value="c"> Chicago Bulls</label>
-                <label><input type="radio" name="q4" value="d"> Golden State Warriors</label>
-            </div>
-
-            <div class="question">
-                <p>5. Who was the first NBA player to score 100 points in a single game?</p>
-                <label><input type="radio" name="q5" value="a"> Michael Jordan</label>
-                <label><input type="radio" name="q5" value="b"> Kobe Bryant</label>
-                <label><input type="radio" name="q5" value="c"> Wilt Chamberlain</label>
-                <label><input type="radio" name="q5" value="d"> Shaquille O'Neal</label>
-            </div>
-
-            <button type="button" onclick="checkAnswers()">Submit</button>
+          <fieldset class="question">
+            <legend>1. Which NBA player has the most championship rings?</legend>
+            <label><input type="radio" name="q1" value="a"> Michael Jordan</label>
+            <label><input type="radio" name="q1" value="b"> Bill Russell</label>
+            <label><input type="radio" name="q1" value="c"> LeBron James</label>
+            <label><input type="radio" name="q1" value="d"> Kobe Bryant</label>
+          </fieldset>
+      
+          <fieldset class="question">
+            <legend>2. What year was the NBA founded?</legend>
+            <label><input type="radio" name="q2" value="a"> 1946</label>
+            <label><input type="radio" name="q2" value="b"> 1950</label>
+            <label><input type="radio" name="q2" value="c"> 1932</label>
+            <label><input type="radio" name="q2" value="d"> 1961</label>
+          </fieldset>
+      
+          <fieldset class="question">
+            <legend>3. Who is the all-time leading scorer in the NBA?</legend>
+            <label><input type="radio" name="q3" value="a"> Michael Jordan</label>
+            <label><input type="radio" name="q3" value="b"> Kareem Abdul-Jabbar</label>
+            <label><input type="radio" name="q3" value="c"> LeBron James</label>
+            <label><input type="radio" name="q3" value="d"> Karl Malone</label>
+          </fieldset>
+      
+          <fieldset class="question">
+            <legend>4. Which team won the most NBA championships?</legend>
+            <label><input type="radio" name="q4" value="a"> Los Angeles Lakers</label>
+            <label><input type="radio" name="q4" value="b"> Boston Celtics</label>
+            <label><input type="radio" name="q4" value="c"> Chicago Bulls</label>
+            <label><input type="radio" name="q4" value="d"> Golden State Warriors</label>
+          </fieldset>
+      
+          <fieldset class="question">
+            <legend>5. Who was the first NBA player to score 100 points in a single game?</legend>
+            <label><input type="radio" name="q5" value="a"> Michael Jordan</label>
+            <label><input type="radio" name="q5" value="b"> Kobe Bryant</label>
+            <label><input type="radio" name="q5" value="c"> Wilt Chamberlain</label>
+            <label><input type="radio" name="q5" value="d"> Shaquille O'Neal</label>
+          </fieldset>
+      
+          <button type="button" class="submit-btn" onclick="checkAnswers()" style="opacity: 1; color: rgb(255, 255, 255); background-color: #353c47;">Submit</button>
         </form>
-
+      
         <p id="result"></p>
-    </div>
+      </div>
+    </main>
 
 <footer>
     <div data-include="components/footer.html"></div>

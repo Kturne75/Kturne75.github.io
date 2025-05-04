@@ -14,55 +14,86 @@
     <div data-include="components/header.html"></div>
 </header>
 
-
-
+<main>
     <h1>Ways To Get Involved</h1>
     <p>Find and join intramural and club basketball teams at UNCC. Connect with fellow students and enjoy competitive or recreational games.</p>
     <figure>
-        <img src="../images/resized_uncc.jpg" alt="Uncc basketball team">
-        <figcaption>UNCC Basketball Team 1974 </figcaption>
-        </figure>
+      <img src="../images/resized_uncc.jpg" alt="">
+      <figcaption>UNCC Basketball Team, 1974</figcaption>
+    </figure>
+  
     <ul>
-        <li>Club basketball sign-up: <a href="https://ninerengage.charlotte.edu/organization/unccmcbb">Club basketball</a></li>
-        <li>Stay Alert with intramural basketball: <a href="https://ninerengage.charlotte.edu/">Niner Engage</a></li>
-        <li>If you’d like to learn more, feel free to contact Matthew Pethel:</li> 
-        <li>
-        <ul> 
-            <li>Email: mpethel@charlotte.edu</li> 
-            <li>Phone: #822-318-9774</li>
-        </ul>
-        </li>
-        </ul>
-        <h3>Get Involved Survey</h3>
+      <li>Club basketball sign-up: <a href="https://ninerengage.charlotte.edu/organization/unccmcbb">Club basketball</a></li>
+      <li>Stay alert with intramural basketball: <a href="https://ninerengage.charlotte.edu/">Niner Engage</a></li>
+      <li>If you’d like to learn more, feel free to contact Matthew Pethel:</li>
+    </ul>
+    <p>Email: <a href="mailto:mpethel@charlotte.edu">mpethel@charlotte.edu</a></p>
+       <P>Phone: <a href="tel:+18223189774">822-318-9774</a></p>
+  
+    <h2>Get Involved Survey</h2>
     <p>Let us know how you're interested in participating in basketball at UNCC!</p>
-    
+  
     <form action="#" method="post">
+  
+      <div>
         <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
+        <input type="text" id="name" name="name" required>
+      </div>
+      <br>
+  
+      <div>
         <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
+        <input type="email" id="email" name="email" required>
+      </div>
+      <br>
+  
+      <div>
         <label for="involvement">How would you like to get involved?</label><br>
         <select id="involvement" name="involvement">
-            <option value="intramural">Intramural Basketball</option>
-            <option value="club">Club Basketball</option>
-            <option value="both">Both</option>
-            <option value="volunteer">Volunteer/Coach</option>
-            <option value="spectator">Just want to watch games</option>
-        </select><br><br>
-
-        <label>What days work best for you?</label><br>
-        <input type="checkbox" id="monday" name="days" value="Monday"> Monday<br>
-        <input type="checkbox" id="wednesday" name="days" value="Wednesday"> Wednesday<br>
-        <input type="checkbox" id="friday" name="days" value="Friday"> Friday<br>
-        <input type="checkbox" id="weekends" name="days" value="Weekends"> Weekends<br><br>
-
+          <option value="intramural">Intramural Basketball</option>
+          <option value="club">Club Basketball</option>
+          <option value="both">Both</option>
+          <option value="volunteer">Volunteer/Coach</option>
+          <option value="spectator">Just want to watch games</option>
+        </select>
+      </div>
+      <br>
+  
+      <fieldset>
+        <legend>What days work best for you?</legend>
+        <label for="monday">
+          <input type="checkbox" id="monday" name="days" value="Monday">
+          Monday
+        </label><br>
+        <label for="wednesday">
+          <input type="checkbox" id="wednesday" name="days" value="Wednesday">
+          Wednesday
+        </label><br>
+        <label for="friday">
+          <input type="checkbox" id="friday" name="days" value="Friday">
+          Friday
+        </label><br>
+        <label for="weekends">
+          <input type="checkbox" id="weekends" name="days" value="Weekends">
+          Weekends
+        </label>
+      </fieldset>
+      <br>
+  
+      <div>
         <label for="experience">Do you have prior basketball experience?</label><br>
-        <textarea id="experience" name="experience" rows="4" cols="40" placeholder="Tell us about your experience (if any)..."></textarea><br><br>
-
-        <input type="submit" value="Submit Survey">
+        <textarea
+          id="experience"
+          name="experience"
+          rows="4"
+          cols="40"
+          placeholder="Tell us about your experience (if any)…"></textarea>
+      </div>
+      <br>
+  
+      <button type="submit"  class="submit-btn" style="opacity: 1; color: rgb(255, 255, 255); background-color: #353c47;">Submit Survey</button>
     </form>
+  </main>
 
 
 <footer>
